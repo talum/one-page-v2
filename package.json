@@ -6,7 +6,8 @@
     "node-sass-chokidar": "^0.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-scrollchor": "^4.0.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

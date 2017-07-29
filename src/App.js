@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Scrollchor from 'react-scrollchor'
 
 class App extends Component {
   render() {
@@ -8,18 +9,24 @@ class App extends Component {
             <div className="menu__inner">
               <div className="menu__logo">
                 <div id="menu-toggle" className="menu__logo__text util--hide-medium-down">TL</div>
-                <div id="home_link" className="menu__logo__text util--show-medium">TL</div>
+                <div id="home_link" className="menu__logo__text util--show-medium"><Scrollchor to="">TL</Scrollchor></div>
               </div>
               <div className="menu__items">
-                <div id="about_link" className="menu__item menu__item--link">
-                  About
-                </div>
-                <div id="apps_link" className="menu__item menu__item--link">
-                  Apps
-                </div>
-                <div id="writing_link" className="menu__item menu__item--link">
-                  Writing
-                </div>
+                <a id="about_link" href="#about" className="menu__item menu__item--link">
+                  <Scrollchor to="#about">
+                    About
+                  </Scrollchor>
+                </a>
+                <a id="apps_link" href="#apps" className="menu__item menu__item--link">
+                  <Scrollchor to="apps">
+                    Apps
+                  </Scrollchor>
+                </a>
+                <a id="writing_link" href="#writing" className="menu__item menu__item--link">
+                  <Scrollchor to="writing">
+                    Writing
+                  </Scrollchor>
+                </a>
                 <div className="menu__item menu__item--link">
                   <a href="https://talum.github.io" target="_blank" rel="noopener noreferrer">Tech Blog</a>
                 </div>
