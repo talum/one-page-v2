@@ -21,12 +21,12 @@ class App extends Component {
                   Writing
                 </div>
                 <div className="menu__item menu__item--link">
-                  <a href="https://talum.github.io" target="_blank">Tech Blog</a>
+                  <a href="https://talum.github.io" target="_blank" rel="noopener noreferrer">Tech Blog</a>
                 </div>
                 <div className="menu__item menu__item--icons">
                   <div className="svg-container">
                     <a href="https://www.twitter.com/tracidini"
-                       target="_blank">
+                       target="_blank" rel="noopener noreferrer">
                       <svg className="svg__icon svg__icon--fill-white">
                         {/*<use xlink:href="#svg__twitter"/>*/}
                       </svg>
@@ -34,14 +34,14 @@ class App extends Component {
                   </div>
                   <div className="svg-container">
                     <a href="https://www.linkedin.com/in/tracylum"
-                       target="_blank">
+                       target="_blank" rel="noopener noreferrer">
                       <svg className="svg__icon svg__icon--fill-white">
                         {/* use xlink:href="#svg__linkedin"> */}
                       </svg>
                     </a>
                   </div>
                   <div className="svg-container">
-                    <a href="https://www.github.com/talum" target="_blank">
+                    <a href="https://www.github.com/talum" target="_blank" rel="noopener noreferrer">
                       <svg className="svg__icon svg__icon--fill-white">
                       {/* <use xlink:href="#svg__github"/> */}
                       </svg>
@@ -78,7 +78,7 @@ class App extends Component {
             <div className="flex-row">
               <div className="flex-row__item flex-row__item--thirds">
                 <div className="image-frame image-frame--layered">
-                  <img src="images/about.jpg" className="image-frame__image"/>
+                  <img src="images/about.jpg" className="image-frame__image" alt=""/>
                 </div>
               </div>
               <div className="flex-row__item flex-row__item--two-thirds">
@@ -91,7 +91,7 @@ class App extends Component {
                     how to code at the Flatiron School, I worked at a
                     publishing house and managed the various operations of a
                     website and podcast network.</p>
-                    <p>As far as fun facts go, I like ice cream, coffee, running, Harry Potter, and Downton Abbey. I highly recommend you follow me on Instagram(<a href="https://www.instagram.com/tracidini/" target="_blank">@tracidini</a>) because I mostly post really great pictures of ice cream.</p>
+                    <p>As far as fun facts go, I like ice cream, coffee, running, Harry Potter, and Downton Abbey. I highly recommend you follow me on Instagram(<a href="https://www.instagram.com/tracidini/" target="_blank" rel="noopener noreferrer">@tracidini</a>) because I mostly post really great pictures of ice cream.</p>
                   </div>
                 </div>
               </div>
@@ -116,8 +116,8 @@ class App extends Component {
                 <div className="module module--card">
                   <div className="module__body">
                     <div className="image-frame">
-                      <a href="https://learn.co" target="_blank">
-                        <img className="image-frame__image" src="images/learn.jpg" />
+                      <a href="https://learn.co" target="_blank" rel="noopener noreferrer">
+                        <img className="image-frame__image" src="images/learn.jpg" alt="" />
                       </a>
                     </div>
                   </div>
@@ -131,9 +131,9 @@ class App extends Component {
                   <div className="module__body">
                     <div className="image-frame">
                       <a href="https://ice-creamery.herokuapp.com"
-                         target="_blank">
+                         target="_blank" rel="noopener noreferrer">
                         <img className="image-frame__image"
-                        src="images/creamery.jpg" />
+                        src="images/creamery.jpg" alt=""/>
                       </a>
                     </div>
                   </div>
@@ -147,9 +147,9 @@ class App extends Component {
                   <div className="module__body">
                     <div className="image-frame">
                       <a href="https://the-sourcery.herokuapp.com"
-                         target="_blank">
+                         target="_blank" rel="noopener noreferrer">
                         <img className="image-frame__image"
-                        src="images/sourcery.jpg" />
+                        src="images/sourcery.jpg" alt="" />
                       </a>
                     </div>
                   </div>
@@ -163,9 +163,9 @@ class App extends Component {
                   <div className="module__body">
                     <div className="image-frame">
                       <a href="http://downton-abbey-quips.herokuapp.com/"
-                         target="_blank">
+                         target="_blank" rel="noopener noreferrer">
                         <img className="image-frame__image"
-                        src="images/downton-abbey.jpg" />
+                        src="images/downton-abbey.jpg" alt="" />
                       </a>
                     </div>
                   </div>
@@ -179,9 +179,9 @@ class App extends Component {
                   <div className="module__body">
                     <div className="image-frame">
                       <a href="https://flatiron-follower.herokuapp.com/"
-                         target="_blank">
+                         target="_blank" rel="noopener noreferrer">
                         <img className="image-frame__image"
-                        src="images/flatiron-follower.jpg"/>
+                        src="images/flatiron-follower.jpg" alt=""/>
                       </a>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ class App extends Component {
           <div className="level__inner">
             <div className="flex-row">
               <div className="flex-row__item flex-row__item--quarters">
-                <a href="http://talum.github.io/" target="_blank">
+                <a href="http://talum.github.io/" target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
                       <h2 className="heading heading--level-3
@@ -219,7 +219,7 @@ class App extends Component {
               </div>
               <div className="flex-row__item flex-row__item--quarters">
                 <a href="https://www.bustle.com/authors/1151-tracy-lum"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
                       <h2 className="heading heading--level-3
@@ -230,7 +230,7 @@ class App extends Component {
               </div>
               <div className="flex-row__item flex-row__item--quarters">
                 <a href="http://thoughtcatalog.com/tracy-lum/"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
                       <h2 className="heading heading--level-3 heading--color-white">Thought Catalog</h2>
@@ -240,7 +240,7 @@ class App extends Component {
               </div>
               <div className="flex-row__item flex-row__item--quarters">
                 <a href="http://www.tracylum.com/blog/"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
                       <h2 className="heading heading--level-3
@@ -278,7 +278,7 @@ class App extends Component {
                   </div>
                   <p>
                     I live on the web. You can find me on these
-                    platforms: <a href="https://instagram.com/tracidini" target="_blank">Instagram</a>, <a href="https://twitter.com/tracidini" target="_blank">Twitter</a>, <a href="https://pinterest.com/tracidini" target="_blank">Pinterest</a>, <a href="https://www.linkedin.com/in/tracylum" target="_blanK">LinkedIn</a>,<a href="https://www.medium.com/@tracidini" target="_blank"> Medium</a>,<a href="https://github.com/talum" target="_blank"> GitHub</a>.
+                    platforms: <a href="https://instagram.com/tracidini" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://twitter.com/tracidini" target="_blank" rel="noopener noreferrer">Twitter</a>, <a href="https://pinterest.com/tracidini" target="_blank" rel="noopener noreferrer">Pinterest</a>, <a href="https://www.linkedin.com/in/tracylum" target="_blank" rel="noopener noreferrer">LinkedIn</a>,<a href="https://www.medium.com/@tracidini" target="_blank" rel="noopener noreferrer"> Medium</a>,<a href="https://github.com/talum" target="_blank" rel="noopener noreferrer"> GitHub</a>.
                   </p>
                 </div>
               </div>
