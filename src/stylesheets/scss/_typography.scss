@@ -1,0 +1,74 @@
+//typography
+.util--font-size-xxl { font-size: 80px; }
+.util--font-size-xl  { font-size: 56px; }
+.util--font-size-l   { font-size: 24px; }
+.util--font-size-m   { font-size: 16px; }
+.util--break-word    { word-break: break-word; }
+
+.heading {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading--level-1 {
+  @extend .util--font-size-xxl;
+}
+
+.heading--level-2 {
+  @extend .util--font-size-xl;
+  font-weight: 300;
+}
+
+.heading--level-3 {
+  @extend .util--font-size-l;
+  text-transform: uppercase;
+}
+
+.heading--section {
+  padding: 0 $default-spacing;
+}
+
+.heading--hero {
+	@extend .heading--level-1;
+	padding: ($default-spacing * 2);
+	border:($default-spacing / 4) solid;
+}
+
+//colors
+.heading--color-white {
+  color: $white;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  @extend .util--font-size-m;
+  @extend .util--break-word;
+	line-height: 1.5;
+}
+
+p + p {
+	margin-top: $default-spacing;
+}
+
+a {
+  text-decoration: none;
+  color: $white
+}
+
+p a {
+  @include ease-transition;
+	color: $purple;
+	&:hover {
+		color: $violet;
+	}
+}
+
+@media (max-width: $breakpoint-medium) {
+	.util--font-size-xxl { font-size: 48px; }
+	.util--font-size-xl  { font-size: 32px; }
+	.util--font-size-l   { font-size: 16px; }
+	.util--font-size-m   { font-size: 16px; }
+	
+	.heading--hero {
+		padding: ($default-spacing / 4);
+	}
+}

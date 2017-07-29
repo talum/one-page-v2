@@ -1,0 +1,23 @@
+//img
+
+.image-frame {
+	width: 100%;
+  .image-frame__image {
+    width: 100%;
+  }
+}
+
+.image-frame--layered {
+  @include purple-gradient;
+  .image-frame__image {
+    position: relative;
+    top: ($default-spacing / -2);
+    left: ($default-spacing / -2);
+    width: 95%;
+  }
+}
+
+.image-frame--small {
+  height: 8 * $default-spacing;
+  width: 8 * $default-spacing;
+}

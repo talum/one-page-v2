@@ -1,0 +1,11 @@
+@mixin purple-gradient {
+  background: $violet; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, $violet, $purple);
+  background: linear-gradient(to left, $violet, $purple);
+}
+
+@mixin ease-transition {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+

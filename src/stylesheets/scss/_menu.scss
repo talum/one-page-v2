@@ -1,0 +1,80 @@
+// menu
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $menu-height;
+  background-color: $charcoal;
+  padding: 0 6 * $default-spacing;
+  z-index: 9999;
+}
+
+.menu__inner {
+  padding: 0 2 * $default-spacing;
+}
+
+.menu__item {
+  display: inline-block;
+  padding: ($default-spacing - 2) $default-spacing;
+  color: $white; 
+}
+
+.menu__logo {
+  display: inline-block;
+  padding: ($default-spacing - 2) $default-spacing;
+  color: $white;
+  float: left; 
+  .menu__logo__text {
+    @extend .heading;
+    @extend .heading--level-3;
+    @extend .util--text-align-c;
+    border: 2px solid $white;
+    padding: 0 ($default-spacing - 4);
+  }
+  &:hover {
+    color: $violet;
+    .menu__logo__text {
+      border: 2px solid $purple;
+    }
+  }
+}
+
+.menu__item--icons {
+  float: right; 
+}
+
+.menu__item--link { 
+  @extend .heading;
+  @extend .heading--level-3;
+  float: left;
+  height: $menu-height;
+
+  &:hover {
+    background-color: $grey-dark;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .menu__logo {
+    .menu__logo__text {
+      position: absolute;
+      left: $default-spacing;
+    }
+  }
+
+  .menu__items {
+    position: absolute;
+    width: 200px;
+    top: $menu-height;
+    left: -200px;
+    background-color: $charcoal; 
+  }
+
+  .menu__item {
+    position: relative;
+    display: block;
+    float: none;
+    width: 200px;  
+  }
+}

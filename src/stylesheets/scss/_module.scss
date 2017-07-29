@@ -1,0 +1,73 @@
+.module {
+  padding: $default-spacing;
+  .module__head {
+    padding: ($default-spacing / 2) 0;
+  }
+}
+
+.module--billboard {
+  padding: 10 * $default-spacing;
+}
+
+.module--callout {
+	.module__head {
+	}
+	.module__body {
+		padding: $default-spacing;
+		p:first-of-type {
+			&::first-line {
+				@extend .util--font-size-l;
+			}
+		}
+	}
+	.module__footer {
+	}
+}
+
+.module--card {
+	.module__body {
+    @include purple-gradient;
+    .image-frame__image {
+      @include ease-transition;
+      opacity: 1;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+	}
+	.module__footer {
+		background-color: $white;
+    position: relative;
+    top: ($default-spacing / -2);
+		padding: $default-spacing;
+		-webkit-box-shadow: 0 10px 6px -6px #777;
+	  -moz-box-shadow: 0 10px 6px -6px #777;
+	   box-shadow: 0 10px 6px -6px #777;
+	}
+}
+
+.module--circle {
+  @extend .util--text-align-c;
+  @include purple-gradient;
+  @include ease-transition;
+  margin: 16px auto;
+  border-radius: 9999px;
+  height: (10 * $default-spacing);
+  width: (10 * $default-spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    opacity: 0.7;
+  }
+  .module__body {
+  }
+  .module__footer {
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .module--billboard {
+    padding: 0 (2 * $default-spacing);
+  }
+}

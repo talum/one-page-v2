@@ -1,0 +1,41 @@
+//levels
+.level {
+  padding: $default-spacing (6 * $default-spacing);
+}
+
+.level__inner {
+  padding: $default-spacing (2 * $default-spacing);
+}
+
+.level__inner--padding--small {
+  padding: 0 $default-spacing;
+}
+
+//colors
+.level--color-grey {
+  background-color: $grey;
+}
+
+.level--color-grey-light {
+  background-color: $grey-light;
+}
+
+.level--has-background {
+  background-size: cover;
+}
+
+@media (max-width: $breakpoint-medium) {
+  .level {
+    padding: (2 * $default-spacing) (4 * $default-spacing);
+  }
+
+  .level__inner {
+    padding: $default-spacing $default-spacing;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .level {
+    padding: $default-spacing $default-spacing;
+  }
+}
