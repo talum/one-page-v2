@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import Scrollchor from 'react-scrollchor'
+import InstagramIcon from './shared/svg/instagram'
+import GitHubIcon from './shared/svg/github'
+import TwitterIcon from './shared/svg/twitter'
+import LinkedInIcon from './shared/svg/linkedin'
 
 class App extends Component {
   render() {
@@ -32,26 +36,28 @@ class App extends Component {
                 </div>
                 <div className="menu__item menu__item--icons">
                   <div className="svg-container">
+                    <a href="https://www.instagram.com/tracidini"
+                       target="_blank" rel="noopener noreferrer">
+                      <InstagramIcon/>
+                    </a>
+                  </div>
+                  <div className="svg-container">
                     <a href="https://www.twitter.com/tracidini"
                        target="_blank" rel="noopener noreferrer">
-                      <svg className="svg__icon svg__icon--fill-white">
-                        {/*<use xlink:href="#svg__twitter"/>*/}
-                      </svg>
+                      <TwitterIcon/>
                     </a>
                   </div>
                   <div className="svg-container">
                     <a href="https://www.linkedin.com/in/tracylum"
                        target="_blank" rel="noopener noreferrer">
                       <svg className="svg__icon svg__icon--fill-white">
-                        {/* use xlink:href="#svg__linkedin"> */}
+                        <LinkedInIcon/>
                       </svg>
                     </a>
                   </div>
                   <div className="svg-container">
                     <a href="https://www.github.com/talum" target="_blank" rel="noopener noreferrer">
-                      <svg className="svg__icon svg__icon--fill-white">
-                      {/* <use xlink:href="#svg__github"/> */}
-                      </svg>
+                      <GitHubIcon />
                     </a>
                   </div>
                 </div>
