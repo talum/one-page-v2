@@ -175,12 +175,15 @@ p a {
     width: 200px;
     top: 56px;
     left: -200px;
-    background-color: #1D1D1D; }
+    background-color: #1D1D1D;
+    transition: left 0.7s ease-in-out; }
   .menu__item {
     position: relative;
     display: block;
     float: none;
-    width: 200px; } }
+    width: 200px; }
+  .menu--open {
+    left: 0; } }
 
 .flex-row {
   display: flex;

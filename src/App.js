@@ -6,16 +6,26 @@ import TwitterIcon from './shared/svg/twitter'
 import LinkedInIcon from './shared/svg/linkedin'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {menuOpen: false}
+    this.toggleMenu = this.toggleMenu.bind(this)
+  }
+
+  toggleMenu() {
+    this.setState({menuOpen: !this.state.menuOpen})
+  }
+
   render() {
     return (
       <div id="home" className="site-layout">
           <div className="menu">
             <div className="menu__inner">
               <div className="menu__logo">
-                <div id="menu-toggle" className="menu__logo__text util--hide-medium-down">TL</div>
+                <div id="menu-toggle" className="menu__logo__text util--hide-medium-down" onClick={this.toggleMenu}>TL</div>
                 <div id="home_link" className="menu__logo__text util--show-medium"><Scrollchor to="">TL</Scrollchor></div>
               </div>
-              <div className="menu__items">
+              <div className={`menu__items ${this.state.menuOpen ? `menu--open` : ''}`}>
                 <a id="about_link" href="#about" className="menu__item menu__item--link">
                   <Scrollchor to="#about">
                     About

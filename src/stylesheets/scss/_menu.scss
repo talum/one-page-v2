@@ -10,6 +10,7 @@
   z-index: 9999;
 }
 
+
 .menu__inner {
   padding: 0 2 * $default-spacing;
 }
@@ -69,6 +70,7 @@
     top: $menu-height;
     left: -200px;
     background-color: $charcoal; 
+    transition: left 0.7s ease-in-out;
   }
 
   .menu__item {
@@ -77,4 +79,9 @@
     float: none;
     width: 200px;  
   }
+
+  .menu--open {
+    left: 0;
+  }
+
 }
