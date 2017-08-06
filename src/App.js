@@ -230,7 +230,7 @@ class App extends Component {
         <div className="level">
           <div className="level__inner">
             <div className="flex-row">
-              <div className="flex-row__item flex-row__item--quarters">
+              <div className="flex-row__item flex-row__item--thirds">
                 <a href="http://talum.github.io/" target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
@@ -240,7 +240,7 @@ class App extends Component {
                   </div>
                 </a>
               </div>
-              <div className="flex-row__item flex-row__item--quarters">
+              <div className="flex-row__item flex-row__item--thirds">
                 <a href="https://www.bustle.com/authors/1151-tracy-lum"
                    target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
@@ -251,23 +251,12 @@ class App extends Component {
                   </div>
                 </a>
               </div>
-              <div className="flex-row__item flex-row__item--quarters">
+              <div className="flex-row__item flex-row__item--thirds">
                 <a href="http://thoughtcatalog.com/tracy-lum/"
                    target="_blank" rel="noopener noreferrer">
                   <div className="module module--circle">
                     <div className="module__body">
                       <h2 className="heading heading--level-3 heading--color-white">Thought Catalog</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="flex-row__item flex-row__item--quarters">
-                <a href="http://www.tracylum.com/blog/"
-                   target="_blank" rel="noopener noreferrer">
-                  <div className="module module--circle">
-                    <div className="module__body">
-                      <h2 className="heading heading--level-3
-                        heading--color-white">Regular Blog</h2>
                     </div>
                   </div>
                 </a>
