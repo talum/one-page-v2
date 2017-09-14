@@ -2,3 +2,8 @@
 .site-layout {
   padding-top: $menu-height;
 }
+
+.site-layout__main {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

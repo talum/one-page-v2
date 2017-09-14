@@ -237,6 +237,10 @@ p a {
 .site-layout {
   padding-top: 56px; }
 
+.site-layout__main {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
 .module {
   padding: 16px; }
   .module .module__head {
