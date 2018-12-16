@@ -38,7 +38,9 @@ time, mark, audio, video {
   padding: 16px 96px; }
 
 .level__inner {
-  padding: 16px 32px; }
+  padding: 16px 32px;
+  max-width: 1080px;
+  margin: 0 auto; }
 
 .level__inner--padding--small {
   padding: 0 16px; }
@@ -62,11 +64,11 @@ time, mark, audio, video {
   .level {
     padding: 16px 16px; } }
 
-.util--font-size-xxl, .heading--level-1, .heading--hero {
-  font-size: 80px; }
+.util--font-size-xxl, .heading--level-1 {
+  font-size: 60px; }
 
 .util--font-size-xl, .heading--level-2 {
-  font-size: 56px; }
+  font-size: 46px; }
 
 .util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link, .module--callout .module__body p:first-of-type::first-line {
   font-size: 24px; }
@@ -89,12 +91,16 @@ time, mark, audio, video {
 .heading--section {
   padding: 0 16px; }
 
-.heading--hero {
-  padding: 32px;
-  border: 4px solid; }
-
 .heading--color-white {
   color: #FFFFFF; }
+
+.heading--gradient {
+  background: #4568DC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4568DC, #B06AB3);
+  background: linear-gradient(to left, #4568DC, #B06AB3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -115,7 +121,7 @@ p a {
     color: #4568DC; }
 
 @media (max-width: 768px) {
-  .util--font-size-xxl, .heading--level-1, .heading--hero {
+  .util--font-size-xxl, .heading--level-1 {
     font-size: 48px; }
   .util--font-size-xl, .heading--level-2 {
     font-size: 32px; }
@@ -137,7 +143,9 @@ p a {
   z-index: 9999; }
 
 .menu__inner {
-  padding: 0 32px; }
+  padding: 0 32px;
+  max-width: 1080px;
+  margin: 0 auto; }
 
 .menu__item {
   display: inline-block;
@@ -247,7 +255,7 @@ p a {
     padding: 8px 0; }
 
 .module--billboard {
-  padding: 160px; }
+  padding: 16px; }
 
 .module--callout .module__body {
   padding: 16px; }
@@ -281,8 +289,8 @@ p a {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   margin: 16px auto;
-  border-radius: 9999px;
-  height: 160px;
+  border-radius: 4px;
+  height: 96px;
   width: 160px;
   display: flex;
   justify-content: center;

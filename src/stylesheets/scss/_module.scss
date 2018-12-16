@@ -6,7 +6,7 @@
 }
 
 .module--billboard {
-  padding: 10 * $default-spacing;
+  padding: $default-spacing;
 }
 
 .module--callout {
@@ -51,8 +51,8 @@
   @include purple-gradient;
   @include ease-transition;
   margin: 16px auto;
-  border-radius: 9999px;
-  height: (10 * $default-spacing);
+  border-radius: 4px;
+  height: (6 * $default-spacing);
   width: (10 * $default-spacing);
   display: flex;
   justify-content: center;

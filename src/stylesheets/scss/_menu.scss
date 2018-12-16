@@ -13,19 +13,21 @@
 
 .menu__inner {
   padding: 0 2 * $default-spacing;
+  max-width: $content-width;
+  margin: 0 auto;
 }
 
 .menu__item {
   display: inline-block;
   padding: ($default-spacing - 2) $default-spacing;
-  color: $white; 
+  color: $white;
 }
 
 .menu__logo {
   display: inline-block;
   padding: ($default-spacing - 2) $default-spacing;
   color: $white;
-  float: left; 
+  float: left;
   .menu__logo__text {
     @extend .heading;
     @extend .heading--level-3;
@@ -42,10 +44,10 @@
 }
 
 .menu__item--icons {
-  float: right; 
+  float: right;
 }
 
-.menu__item--link { 
+.menu__item--link {
   @extend .heading;
   @extend .heading--level-3;
   float: left;
@@ -69,7 +71,7 @@
     width: 200px;
     top: $menu-height;
     left: -200px;
-    background-color: $charcoal; 
+    background-color: $charcoal;
     transition: left 0.7s ease-in-out;
   }
 
@@ -77,7 +79,7 @@
     position: relative;
     display: block;
     float: none;
-    width: 200px;  
+    width: 200px;
   }
 
   .menu--open {

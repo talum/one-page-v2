@@ -18,24 +18,8 @@ class App extends Component {
         <Menu menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu}/>
         <div id='home' className='site-layout'>
           <div className='site-layout__main'>
-            <div className='level level--has-background'
-              style={{backgroundImage: "url('images/hero-image-tinted.jpg')"}}>
-              <div className='level__inner'>
-                <div className='module module--billboard'>
-                  <div className='heading heading--hero heading--color-white util--text-align-c'>
-                    tracy lum
-                  </div>
-                </div>
-              </div>
-            </div>
             <div id='about' className='level'>
               <div className='level__inner'>
-                <div className='heading heading--level-2'>
-                  About
-                </div>
-                <h2 className='heading heading--level-3'>
-                  Just a lil' backstory
-                </h2>
               </div>
             </div>
 
@@ -50,14 +34,8 @@ class App extends Component {
                   <div className='flex-row__item flex-row__item--two-thirds'>
                     <div className='module module--callout'>
                       <div className='module__body'>
-                        <p>Hello! I'm Tracy, a full-stack web developer and
-                        occasional writer. I enjoy writing Ruby, JavaScript, and
-                        object-oriented CSS,
-                        but learning new languages is always fun! Before learning
-                        how to code at the Flatiron School, I worked at a
-                        publishing house and managed the various operations of a
-                        website and podcast network.</p>
-                        <p>As far as fun facts go, I like ice cream, coffee, running, Harry Potter, and Downton Abbey. I highly recommend you follow me on Instagram(<a href='https://www.instagram.com/tracidini/' target='_blank' rel='noopener noreferrer'>@tracidini</a>) because I mostly post really great pictures of ice cream.</p>
+                        <p>Hello! I'm Tracy Lum, a full-stack software engineer. I enjoy writing Ruby, JavaScript, Elixir, and CSS. I also write blog posts about all the code I write. You can find my work on <a href='http://talum.github.io/' target='_blank' rel='noopener noreferrer'>my personal blog</a>, the <a href='https://medium.com/flatiron-labs' target='_blank' rel='noopener noreferrer'>Flatiron Labs blog</a>, <a href='https://hackernoon.com/' target='_blank' rel='noopener noreferrer'>Hacker Noon</a>, and others. I have also been known to speak publicly about code, for example, at <a href='https://2018.empirejs.org/#speakers' target='_blank' rel='noopener noreferrer'>EmpireJS 2018</a>.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -68,10 +46,10 @@ class App extends Component {
             <div id='apps' className='level level--color-grey-light'>
               <div className='level__inner'>
                 <div className='heading heading--level-2'>
-                  Apps
+                  Apps & Projects
                 </div>
                 <h2 className='heading heading--level-3'>
-                  Some things I've built
+                  Some things I've built and worked on
                 </h2>
               </div>
             </div>

@@ -1,6 +1,6 @@
 //typography
-.util--font-size-xxl { font-size: 80px; }
-.util--font-size-xl  { font-size: 56px; }
+.util--font-size-xxl { font-size: 60px; }
+.util--font-size-xl  { font-size: 46px; }
 .util--font-size-l   { font-size: 24px; }
 .util--font-size-m   { font-size: 16px; }
 .util--break-word    { word-break: break-word; }
@@ -27,15 +27,15 @@
   padding: 0 $default-spacing;
 }
 
-.heading--hero {
-	@extend .heading--level-1;
-	padding: ($default-spacing * 2);
-	border:($default-spacing / 4) solid;
-}
-
 //colors
 .heading--color-white {
   color: $white;
+}
+
+.heading--gradient {
+  @include purple-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {

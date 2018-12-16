@@ -5,6 +5,8 @@
 
 .level__inner {
   padding: $default-spacing (2 * $default-spacing);
+  max-width: $content-width;
+  margin: 0 auto;
 }
 
 .level__inner--padding--small {

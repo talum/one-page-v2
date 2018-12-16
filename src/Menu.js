@@ -14,7 +14,7 @@ const Menu = ({menuOpen, toggleMenu}) => {
           <div id='home_link' className='menu__logo__text util--show-medium'><Scrollchor to=''>TL</Scrollchor></div>
         </div>
         <div className={`menu__items ${menuOpen ? `menu--open` : ''}`}>
-          <a id='about_link' href='#about' className='menu__item menu__item--link'>
+          <a id='about_link' href='#' className='menu__item menu__item--link'>
             <Scrollchor to='about'>
               About
             </Scrollchor>
