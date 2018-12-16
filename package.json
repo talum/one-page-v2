@@ -1,6 +1,9 @@
 {
   "name": "one-page-v2",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "engines": {
+    "node": "10.14.2"
+  },
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "^0.0.3",
